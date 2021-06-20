@@ -1,0 +1,31 @@
+.footer {
+    background-color: $veryDarkCyan;
+    padding: 3rem 1rem;
+    padding-top: 8rem;
+    color: #fff;
+
+    img {
+        fill: white; // Search how to change svg color
+    }
+
+    &__info {
+        
+        &-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 100%;
+            
+            & img:not(:first-child) {
+                align-self: center;
+            }
+
+            img {
+                flex-basis: 10%;
+                vertical-align: middle;
+                padding-right: 1rem;
+            }
+        }
+    }   
+
+}

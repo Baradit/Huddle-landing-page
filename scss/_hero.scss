@@ -1,0 +1,27 @@
+.hero {
+    margin-top: 3rem;
+    padding: 2rem;
+    padding-top: 0;
+
+    &__text {
+        text-align: center;
+
+        h1 {
+            margin-bottom: 1.2rem;
+            line-height: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.8rem;
+        }
+
+        button {
+            margin-bottom: 3.4375rem;
+            padding: 0.875rem 4rem;
+            background-color: $pink;
+            color: #fff;
+            border-radius: 5rem;
+            border: none;
+        }
+    }
+}

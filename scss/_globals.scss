@@ -1,0 +1,48 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height:100%; 
+    font-size: 1.125rem; // 18px
+    font-family: $openSans; // Weight 400-700
+    font-weight: 400; // 
+    color: $veryDarkCyan;
+    line-height: 1.5rem;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    font-family: $poppins;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-family: $openSans;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+}
+
+
+.attribution {
+    background: #000;
+    color: #fff;
+}
