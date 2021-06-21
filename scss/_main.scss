@@ -1,11 +1,16 @@
 main {
-    padding: 3rem 1rem;
-    margin-bottom: 4rem;
+    position: relative;
+    z-index: 1;
+    padding: 3rem 1.5rem;
+    margin-bottom: 8rem;
+
+    & > * {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+        text-align: center;
+    }
 
     .col {
-        text-align: center;
         margin-bottom: 2rem;
-        box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
         border-radius: 0.9rem;
         padding: 2rem;
 
@@ -23,6 +28,80 @@ main {
             font-family: $openSans;
             color: $grayishBlue;
             font-weight: 400;
+        }
+    }
+
+    .community {
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+        border-radius: 0.9rem;
+        background-color:  #fff;
+        width: 95%;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: -14rem;
+
+
+        h3 { 
+            padding-bottom: 2rem;
+        }
+        
+
+        button {
+            padding: 0.875rem 3rem;
+            background-color: $pink;
+            color: #fff;
+            border-radius: 5rem;
+            border: none;
+        }
+    }   
+}
+
+
+@media (min-width: 48rem) {
+    main {
+        padding-top: 10.125rem;
+        padding-bottom: 21.25rem;
+        max-width: 77rem;
+        margin: 0 auto;
+
+        .col {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin-bottom: 2.25rem;
+            padding: 3.25rem 0;
+            padding-left: 7.5rem;
+            text-align: left;
+            gap: 11.875rem;
+            
+            &__img {
+
+                img {
+                    margin: 0;
+                }
+            }
+        }
+
+        .community {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.8rem;
+            max-width: 50rem;
+            padding: 3.75rem 0;
+            bottom: -6.5rem;
+
+            h3 {
+                padding-bottom: 3rem;
+            }
+
+            button {
+                padding: 2rem 7rem;
+                font-size: 1.125rem;
+                border-radius: 7rem;
+            }
         }
     }
 

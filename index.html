@@ -18,10 +18,10 @@
 <body>
   <section class="container">
     <header>
-    <nav>
-      <img class="logo" src="./images/logo.svg" alt="">
-      <button>Try it Free</button>
-    </nav>
+      <nav>
+        <img class="header__logo" src="./images/logo.svg" alt="">
+        <button class="header__btn">Try it Free</button>
+      </nav>
     </header>
     <section class="hero">
       <div class="hero__text">
@@ -38,24 +38,36 @@
   
   <main>
       <div class="col">
-        <img src="./images/illustration-grow-together.svg" alt="">
-        <h2>Grow Together</h2>
-        <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+        <div class="col__img">
+          <img src="./images/illustration-grow-together.svg" alt="">
+        </div>
+        <div class="col__text">
+          <h2>Grow Together</h2>
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
           Think of the insightful conversations you miss out on with a feedback form. </p>
+        </div>
       </div>
       <div class="col">
-        <img src="/images/illustration-flowing-conversation.svg" alt="">
-        <h2>Flowing Conversations</h2>
-        <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-          have just-in-time loading for a more natural flow.</p>
+        <div class="col__img">
+          <img src="/images/illustration-flowing-conversation.svg" alt="">
+        </div>
+        <div class="col__text">
+          <h2>Flowing Conversations</h2>
+          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+            have just-in-time loading for a more natural flow.</p>
+        </div>
       </div>
       <div class="col">
-        <img src="/images/illustration-your-users.svg" alt="">
-        <h2>Your Users</h2>
+        <div class="col__img">
+          <img src="/images/illustration-your-users.svg" alt="">
+        </div>
+        <div class="col__text">
+          <h2>Your Users</h2>
         <p>
           It takes no time at all to integrate Huddle with your app's authentication solution. 
           This means, once signed in to your app, your users can start chatting immediately.
         </p>
+        </div>
       </div>
 
       <div class="community">
@@ -65,23 +77,38 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__info">
-      <img src="./images/logo.svg" alt="">
-      <div class="footer__info-item">
-        <img src="/images/icon-location.svg" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua</p>
-      </div>
-      <div class="footer__info-item">
-        <img src="/images/icon-phone.svg" alt="">
-        <a href="tel">+1-543-123-4567</a>
-      </div>
-      <div class="footer__info-item">
-        <img src="/images/icon-email.svg" alt="">
-        <a href="mailto">example@huddle.com</a> 
+    <div class="footer__items">
+      <div class="footer__item footer__logo">
+        <img src="./images/logo.svg" alt="">
       </div>
 
+      <div class="footer__item">
+        <div class="footer__item-icon">
+          <img src="/images/icon-location.svg" alt="">
+        </div>
+        <div class="footer__item-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua</p>
+        </div>
+      </div>
+      <div class="footer__item">
+        <div class="footer__item-icon">
+          <img src="/images/icon-phone.svg" alt="">
+        </div>
+        <div class="footer__item-description">
+          <a href="tel">+1-543-123-4567</a>
+        </div>
+      </div>
+      <div class="footer__item">
+        <div class="footer__item-icon">
+          <img src="/images/icon-email.svg" alt="">
+        </div>
+        <div class="footer__item-description">
+          <a href="mailto">example@huddle.com</a> 
+        </div>
+      </div>
     </div>
+
     <div class="footer__categories">
       <nav>
         <a href="">About Us</a>
@@ -92,10 +119,12 @@
         <a href="">Contact Us</a>
       </nav>
     </div>
-    <div class="social-media">
-
+    <div class="footer__social">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
     </div>
-    <div class="copyright">
+    <div class="footer__copyright">
       <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
     </div>
   </footer>

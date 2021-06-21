@@ -7,6 +7,7 @@
 }
 
 header {
+    
     padding: 2rem 1rem;
     
     nav {
@@ -26,4 +27,28 @@ header {
             border: none;
         }
     }
+}
+
+@media (min-width: 48rem) {
+    .container {
+        background-image: url(/images/bg-hero-desktop.svg);
+    }
+
+    header {
+        padding-top: 2.875rem;
+        padding-bottom: 4.25rem;
+        max-width: 80rem;
+        margin: 0 auto;
+
+        .header__logo{
+            width: 12.5rem;
+        }
+
+        .header__btn {
+            font-size: 1rem;
+            padding: 1rem 4rem;
+            border-radius: 5rem;
+        }
+    }
+
 }

@@ -25,3 +25,35 @@
         }
     }
 }
+
+@media (min-width: 48rem) {
+    .hero {
+        max-width: 80rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        padding-bottom: 6.875rem;
+
+        &__text {
+            margin-top: 3.5rem;
+            width: 40%;
+            text-align: left;
+
+            h1 {
+                line-height: 3.5rem;
+                font-size: 2.5rem;
+            }
+
+            button {
+                padding: 1.25rem 4.5rem;
+            }
+        }
+
+        &__img {
+            width: 60%;
+        }
+    }
+
+
+}
