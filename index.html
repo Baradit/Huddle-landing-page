@@ -77,63 +77,79 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__items">
-      <div class="footer__item footer__logo">
+    <section class="footer__container">
+      <div class="footer__logo">
         <img src="./images/logo.svg" alt="">
       </div>
 
       <div class="footer__item">
-        <div class="footer__item-icon">
-          <img src="/images/icon-location.svg" alt="">
-        </div>
-        <div class="footer__item-description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        incididunt ut labore et dolore magna aliqua</p>
-        </div>
+        <ul>
+          <li>
+            <div class="footer__item-img">
+              <img src="/images/icon-location.svg" alt="">
+            </div>
+            <div class="footer__item-desc">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </li>
+          <li>
+            <div class="footer__item-img">
+              <img src="/images/icon-phone.svg" alt="">
+            </div>
+            <div class="footer__item-desc">
+              <a href="tel">+1-543-123-4567</a>
+            </div>
+          </li>
+          <li>
+            <div class="footer__item-img">
+              <img src="/images/icon-email.svg" alt="">
+            </div>
+            <div class="footer__item-desc">
+              <a href="mailto: example@fylo.com">example@fylo.com</a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="footer__item">
-        <div class="footer__item-icon">
-          <img src="/images/icon-phone.svg" alt="">
-        </div>
-        <div class="footer__item-description">
-          <a href="tel">+1-543-123-4567</a>
-        </div>
-      </div>
-      <div class="footer__item">
-        <div class="footer__item-icon">
-          <img src="/images/icon-email.svg" alt="">
-        </div>
-        <div class="footer__item-description">
-          <a href="mailto">example@huddle.com</a> 
-        </div>
-      </div>
-    </div>
 
     <div class="footer__categories">
       <nav>
-        <a href="">About Us</a>
-        <a href="">What We Do</a>
-        <a href="">FAQ</a>
-        <a href="">Career</a>
-        <a href="">Blog</a>
-        <a href="">Contact Us</a>
+        <div class="footer__categories-left">
+          <a href="">About Us</a>
+          <a href="">What We Do</a>
+          <a href="">FAQ</a>
+        </div>
+        <div class="footer__categories-right">
+          <a href="">Career</a>
+          <a href="">Blog</a>
+          <a href="">Contact Us</a>
+        </div>
+        
       </nav>
     </div>
     <div class="footer__social">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+      <div class="footer__social-item">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="footer__social-item">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="footer__social-item">
+        <i class="fab fa-instagram"></i>
+      </div>
     </div>
     <div class="footer__copyright">
       <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
     </div>
+    </section>
+    
   </footer>
 
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">NeutronCL</a>.
     </p>
   </footer>
 </body>

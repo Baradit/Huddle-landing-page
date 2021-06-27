@@ -4,49 +4,44 @@
     padding-top: 10rem;
     padding-bottom: 2rem;
     color: #fff;
-
-    &__item {
-        margin-bottom: 1.5rem;
-    }
-
-    &__item:nth-child(4){
-        margin-bottom: 0;
-    }
-
+    
     &__logo {
         filter: brightness(0) invert(1);
 
         img {
-            height: 1.75rem;
-            display: block;
+            width: 11.25rem;
         }
     }
 
-    &__item { 
-        display: flex;
-        align-items: flex-start;
-        max-width: 100%;
-        gap: 0;
+    &__item {
+        li {
+            padding-top: 1.5rem;
+            display: flex;
+            align-items: flex-start;
 
-        &-icon {
-            padding-top: 0.2rem;
-            min-width: 40px;
-            max-width: 40px;
-        }
-
-        &-description {
-            max-width: 700px;
-        }
-    
-    }   
-
+            .footer__item-img {
+                padding-top: 0.2rem;
+                min-width: 50px;
+            }   
+        }         
+    }
 
     &__categories {
         margin: 3rem 0;
 
-        a {
-            display: block;
-            margin-bottom: 1rem;
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & > * {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding-bottom: 1rem;
+                }
+            }
         }
     }
 
@@ -57,34 +52,94 @@
         gap: 1rem;
         margin-bottom: 1.5rem;
 
-        i {
+        &-item {
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 35px;
+            height: 35px;
             border: 1px solid #fff;
             border-radius: 50%;
-            height: 40px;
-            width: 40px;
         }
-        
     }
 
     &__copyright {
         text-align: center;
+        margin-bottom: 1rem;
     }
+
 }
 
+@media (min-width: 48rem) {
+    
 
+    .footer {
+        padding-top: 12rem;
 
+        &__container {
+            display: flex;
+            align-items: flex-start;
+            max-width: 77rem;
+            margin: 0 auto;
+            flex-wrap: wrap;
+
+            & >:first-child, :nth-of-type(5){
+                flex-basis: 100%;
+            }
+        }
+
+        &__logo {
+            padding-bottom: 2.875rem;
+        }
+
+        &__item {
+            flex-basis: 32%;
+            li  {
+                padding-top: 0;
+                padding-bottom: 2rem;
+            }
+        }
+
+        &__categories {
+            margin: 0;
+            margin-left: 8.5rem;
+            flex-basis: 30%;
+
+            nav {
+                gap: 2rem;
+                flex-direction: row;
+
+                & > * {
+                    width: 50%;
+                }
+            }
+
+        }
+        
+        &__social {
+            margin: 0;
+            padding: 0;
+            flex-basis: 26%;
+        }
+
+        &__copyright {
+            text-align: right;
+            width: 100%;
+        }
+    }
+    
+    
+}
+
+/*
 @media (min-width: 48rem) {
     .footer {
         position: relative;
+        padding: 0 1.5rem;
         padding-top: 11.875rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
         padding-bottom: 8.875rem;
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2.875rem;
 
 
@@ -104,15 +159,8 @@
         }
 
         &__social {
-            padding-top: 2.5rem;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        &__copyright {
-            position: absolute;
-            right: 5rem;
-            bottom: 4.25rem;
+            grid-column: span 2;
+            place-self: center;
         }
     }
 }
@@ -122,14 +170,21 @@
         padding-left: 7.5rem;
         padding-right: 5rem;
         grid-gap: 8.875rem;
+        grid-template-columns: repeat(2, 1fr);
 
         &__social {
+            padding-top: 2.5rem;
             padding-left: 1.7rem;
+            grid-column: 3;
             align-items: flex-start;
             justify-content: flex-start;
         }
-    }
-}
 
-// Change categories order
-// Align Copy with social media
+        &__copyright {
+            position: absolute;
+            right: 5rem;
+            bottom: 4.25rem;
+        }
+    }
+} 
+*/
