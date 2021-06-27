@@ -39,6 +39,12 @@ button {
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
   font-size: 1.125rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 50%;
 }
 
 .attribution {
@@ -97,6 +103,7 @@ button {
     font-size: 2.5rem;
   }
   .hero__text button {
+    font-size: 0.875rem;
     padding: 1.25rem 4.5rem;
   }
   .hero__img {
@@ -133,12 +140,12 @@ header nav .header__logo {
 }
 
 header nav .header__btn {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   background-color: #fff;
   font-weight: 700;
-  border-radius: 1rem;
+  border-radius: 2rem;
   border: none;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
 }
 
 @media (min-width: 48rem) {
@@ -156,8 +163,7 @@ header nav .header__btn {
     height: 1.875rem !important;
   }
   header .header__btn {
-    font-size: 1rem;
-    padding: 1rem 4rem;
+    padding: 1rem 4rem !important;
     border-radius: 5rem;
   }
 }
@@ -242,13 +248,20 @@ main .community button {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 2.25rem;
-    padding: 3.25rem 0;
+    padding: 4.25rem 0;
     padding-left: 7.5rem;
     text-align: left;
     gap: 11.875rem;
   }
   main .col__img img {
     margin: 0;
+  }
+  main .flow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-right: 2.125rem;
   }
   main .community {
     display: -webkit-box;
@@ -270,7 +283,7 @@ main .community button {
     padding-bottom: 3rem;
   }
   main .community button {
-    padding: 2rem 7rem;
+    padding: 1.8rem 7rem;
     font-size: 1.125rem;
     border-radius: 7rem;
   }
